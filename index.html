@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="cardmaker.js" defer></script>
+    <script src="https://kit.fontawesome.com/6270a2ec8e.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="one">
+        <h1>Bussiness Card Maker</h1>
+    </div>
+    <section class="allcontainer">
+        <div class="leftbox">
+            <section id="cardMaker">
+                <section class="top">
+
+
+                </section>
+                <form id="cardMakerContainer" onsubmit="createCard(event)">
+                    <input type="text" id="name" name="name" value="" placeholder="name">
+                    <input type="text" id="major" name="part" value="" placeholder="Major">
+                    <input type="text" id="school" name="part" value="" placeholder="School">
+                    <input type="text" id="github" name="part" value="" placeholder="github">
+                    <input type="text" id="instagram" name="part" value="" placeholder="instagram">
+                    <div id="buttonBox">
+                        <label class="imgButton" for="bgCustom">!배경 선택</label>
+                        <input type="color" id="bgCustom" value="배경 색상">
+                        <label class="imgButton" for="file-input">사진 입력</label>
+                        <input type="file" id="file-input" name="image" accept="image/*">
+                        <input type="submit" id="button" value="만들기">
+                    </div>
+                </form>
+            </section>
+        </div>
+        <div class="rightbox">
+
+        </div>
+        <div id="image-container"></div>
+    </section>
+</body>
+
+</html>
